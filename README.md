@@ -11,10 +11,13 @@ This project will help guide the development of Pattern Lab Node + Twig and the 
  
  ## Installation
  
- 1. `git clone git@github.com:geerlingguy/drupal-vm.git`
+ 1. From root: `git clone git@github.com:geerlingguy/drupal-vm.git`
      1. `cd drupal-vm`
      1. `ln -s ../config.yml ./config.yml`
      1. `sudo ansible-galaxy install -r provisioning/requirements.yml --force`
      1. `vagrant up`
- 1. `git clone git@github.com:phase2/patternlab-connector.git`
- 1. `git clone git@github.com:phase2/patternlab-node.git`
+ 1. From root: `git clone git@github.com:phase2/patternlab_connector.git`
+     1. `mkdir dev/drupal/modules/custom`
+     1. `cd dev/drupal/modules/custom`
+     1. `ln -s ../../../../patternlab_connector patternlab_connector`
+ 1. From root: `git clone git@github.com:phase2/patternlab-node.git`
