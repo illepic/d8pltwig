@@ -19,3 +19,4 @@ projects:
 
   # Other modules.
   devel: "1.x-dev"
+  examples: "1.x-dev"

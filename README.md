@@ -13,7 +13,6 @@ This project will help guide the development of Pattern Lab Node + Twig and the 
  
  1. `git clone git@github.com:geerlingguy/drupal-vm.git`
      1. `cd drupal-vm`
-     1. `ln -s ../drupal.make.yml ./drupal.make.yml`
      1. `ln -s ../config.yml ./config.yml`
      1. `sudo ansible-galaxy install -r provisioning/requirements.yml --force`
      1. `vagrant up`

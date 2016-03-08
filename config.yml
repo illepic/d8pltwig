@@ -22,7 +22,7 @@ vagrant_public_ip: ""
 vagrant_synced_folders:
   # The first synced folder will be used for the default Drupal installation, if
   # build_makefile: is 'true'.
-  - local_path: ~/Sites/drupalvm
+  - local_path: ../dev
     destination: /var/www/drupalvm
     type: nfs
     create: true
@@ -37,7 +37,7 @@ drupalvm_webserver: apache
 # Set this to false if you are using a different site deployment strategy and
 # would like to configure 'vagrant_synced_folders' and 'apache_vhosts' manually.
 build_makefile: true
-drush_makefile_path: ../../drupal.make.yml
+drush_makefile_path: ../../../drupal.make.yml
 
 # Set this to false if you don't need to install drupal (using the drupal_*
 # settings below), but instead copy down a database (e.g. using drush sql-sync).
@@ -152,10 +152,10 @@ mysql_users:
 installed_extras:
   - adminer
   - drupalconsole
-  - mailhog
+#  - mailhog
   - memcached
   # - nodejs
-  - pimpmylog
+#  - pimpmylog
   # - redis
   # - ruby
   # - selenium
