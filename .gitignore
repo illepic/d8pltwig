@@ -1,4 +1,3 @@
-dev
+dev/*
+!.gitkeep
 drupal-vm
-patternlab_connector
-patternlab-node
