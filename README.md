@@ -1,4 +1,4 @@
-# Drupal 8 - Pattern Lab Node - TWig
+# Drupal 8 - Pattern Lab Node - Twig
 
 This project will help guide the development of Pattern Lab Node + Twig and the Drupal 8 module available to make Drupal aware of these Twig files.
  
@@ -10,18 +10,40 @@ This project will help guide the development of Pattern Lab Node + Twig and the 
 1. Vagrant 1.8.1
  
 ## Installation
+
+Run all commands from root: 
+
+Clone repo:
+
+```
+git clone git@github.com:geerlingguy/drupal-vm.git
+```
+
+Setup:
+
+```
+cd drupal-vm
+ln -s ../config.yml ./config.yml
+sudo ansible-galaxy install -r provisioning/requirements.yml --force
+vagrant up
+```
  
-1. From root: `git clone git@github.com:geerlingguy/drupal-vm.git`
-    
-    cd drupal-vm
-    ln -s ../config.yml ./config.yml
-    sudo ansible-galaxy install -r provisioning/requirements.yml --force
-    vagrant up
-    
-1. From root: `cd dev && git clone git@github.com:phase2/patternlab_connector.git`
-    
-    mkdir dev/drupal/modules/custom
-    cd dev/drupal/modules/custom
-    ln -s .../../../patternlab_connector ./patternlab_connector
-    
-1. From root: `cd dev && git clone git@github.com:phase2/patternlab-node.git`
+Install other repo:
+
+```
+cd dev && git clone git@github.com:phase2/patternlab_connector.git
+```
+
+Setup:
+
+```
+mkdir dev/drupal/modules/custom
+cd dev/drupal/modules/custom
+ln -s .../../../patternlab_connector ./patternlab_connector
+```
+
+Install 3rd repo: 
+
+```
+cd dev && git clone git@github.com:phase2/patternlab-node.git
+```
