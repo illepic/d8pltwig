@@ -31,19 +31,23 @@ vagrant up
 Install other repo:
 
 ```
-cd dev && git clone git@github.com:phase2/patternlab_connector.git
+cd dev 
+git clone git@github.com:phase2/patternlab_connector.git
+cd ..
 ```
 
 Setup:
 
 ```
-mkdir dev/drupal/modules/custom
+mkdir -p dev/drupal/modules/custom
 cd dev/drupal/modules/custom
-ln -s .../../../patternlab_connector ./patternlab_connector
+ln -s ../../../patternlab_connector ./patternlab_connector
+cd -
 ```
 
 Install 3rd repo: 
 
 ```
-cd dev && git clone git@github.com:phase2/patternlab-node.git
+cd dev 
+git clone git@github.com:phase2/patternlab-node.git
 ```
