@@ -80,6 +80,6 @@ If you use P2 devtools, it is recommended that you work with Vagrant and Vagrant
 	     sudo chown -R $USER: /opt/vms
 	    
 1. Move the entire `d8pltwig` project to `/opt/projects/d8pltwig`
-1. Destroy the Vagrant box and re-up it:
+1. Destroy the Vagrant box and re-up it from within `d8pltwig/drupal-vm`:
 
 		vagrant destroy && vagrant up
